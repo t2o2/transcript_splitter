@@ -1,0 +1,1 @@
+python face_clustering.py std_models/shape_predictor_5_face_landmarks.dat std_models/dlib_face_recognition_resnet_model_v1.dat ./faces face_clusters

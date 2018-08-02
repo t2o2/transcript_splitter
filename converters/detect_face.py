@@ -26,5 +26,5 @@ for frame in frame_files:
         print("A face is located at pixel location Top: {}, Left: {}, Bottom: {}, Right: {}".format(top, left, bottom, right))
         face_image = image[top:bottom, left:right]
         pil_image = Image.fromarray(face_image)
-        pil_image.save('faces/face_{}s_{}.png'.format(frame_id, frame_face_count))
+        pil_image.save('faces/face_{}s_{}.jpg'.format(frame_id, frame_face_count))
         frame_face_count += 1

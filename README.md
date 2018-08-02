@@ -2,29 +2,36 @@
 
 Split transcript text and associate it with the correct speaker
 
+## Processing Flow A
 
-## Processing flow
+Youtube -> Images -> Faces -> Face Clusters -> Timeline for each cluster
 
-**dl\_sample\_video.sh**
+#### dl\_sample\_video.sh
 
 Downloads samples videos to **samples** folder
 
-**converters\\video2images.py**
+#### converters\\video2images.py
 
 Samples video every second to image files and stores them in **frames** folder
 
-**converters\\mass_img_convert.py**
+#### converters\\mass_img_convert.py
 
 Converts all image formats in a folder
 
-**converters\\detect_face.py**
+#### converters\\detect_face.py
 
 Detects all faces within the **frames** folder and stores them in **faces** folder
 
-**converters\\cluster_faces.sh**
+#### converters\\cluster_faces.sh
 
 Clusters all faces in **faces** folder based on similarity of facial features based on **face_clustering.py**. The faces are clustered and stored in **face_clusters** folder
 
-**converters\\cluster_pct.py**
+#### converters\\cluster_pct.py
 
 Calculate percentage time a face cluster has occupied in a video based on frame count in **frames** folder
+
+## Processing Flow B
+
+Youtube -> Speech recognition (optional) -> Speaker recognition -> Timeline for each speaker
+
+

@@ -1,4 +1,4 @@
-# Interview transcript Splitter
+# Interview Transcript Splitter
 
 Split transcript text and associate it with the correct speaker
 

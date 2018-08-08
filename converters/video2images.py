@@ -1,11 +1,12 @@
 import cv2
+import sys
 from math import floor
 
 
 if len(sys.argv) != 2:
     print(
         "Call this program like this:\n"
-        "    ./video2images.py ../samples/Ballmer_DavidRubensteinshow_KopLe5NZBJc.mkv")
+        "    python video2images.py ../samples/Ballmer_DavidRubensteinshow_KopLe5NZBJc.mkv")
     exit()
 
 video_path = sys.argv[1]

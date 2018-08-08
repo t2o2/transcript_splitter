@@ -9,7 +9,7 @@ frame_folder = 'frames'
 frame_files = [f for f in listdir(frame_folder) if isfile(join(frame_folder, f))]
 
 for frame in frame_files:
-    match = re.match('pic_(?P<id>\d+)s\.png', frame)
+    match = re.match('frame_(?P<id>\d+)s\.png', frame)
     if not match:
         print('Error frame file not found: {}'.format(frame))
         continue

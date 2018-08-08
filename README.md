@@ -2,7 +2,7 @@
 
 Split transcript text and associate it with the correct speaker
 
-## Processing Flow A
+## Video Processing Flow
 
 Youtube -> Images -> Faces -> Face Clusters -> Timeline for each cluster
 
@@ -30,7 +30,7 @@ Clusters all faces in **faces** folder based on similarity of facial features ba
 
 Calculate percentage time a face cluster has occupied in a video based on frame count in **frames** folder
 
-## Processing Flow B
+## Audio Processing Flow
 
 Youtube -> Speech recognition (optional) -> Speaker recognition -> Timeline for each speaker
 
